@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIH Student Monitoring - Manage Students</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Manage Students Page -->
+  <div class="manage-container">
+    <h2>Manage Students</h2>
+
+    <!-- Add Student Form -->
+    <div class="form-box">
+      <h3>Add Student</h3>
+      <form id="studentForm">
+        <input type="text" id="rollNo" placeholder="Roll No" required />
+        <input type="text" id="name" placeholder="Name" required />
+        <button type="submit">Add Student</button>
+      </form>
+    </div>
+
+    <!-- Student List Table -->
+    <h3>Student List</h3>
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <th>Roll No</th>
+          <th>Name</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>101</td>
+          <td>Aryan Singh</td>
+          <td><button onclick="deleteStudent(this)">Delete</button></td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>Rohit Verma</td>
+          <td><button onclick="deleteStudent(this)">Delete</button></td>
+        </tr>
+        <tr>
+          <td>103</td>
+          <td>Neha Sharma</td>
+          <td><button onclick="deleteStudent(this)">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Navigation -->
+    <div class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="logs.html">Student Logs</a>
+      <a href="reports.html">Reports</a>
+      <a href="index.html">Logout</a>
+    </div>
+  </div>
+
+  <script src="js/manage.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIH Student Monitoring - Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Dashboard Page -->
+  <div class="dashboard-container">
+    <h2>Dashboard</h2>
+
+    <!-- Attendance Summary -->
+    <div class="summary">
+      <p>Total Students: <span id="totalStudents">350</span></p>
+      <p>Present: <span id="presentStudents">324</span></p>
+      <p>Absent: <span id="absentStudents">26</span></p>
+    </div>
+
+    <!-- Chart Section -->
+    <div class="chart-box">
+      <canvas id="attendanceChart" width="400" height="200"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-links">
+      <a href="logs.html">Student Logs</a>
+      <a href="manage.html">Manage Students</a>
+      <a href="reports.html">Reports</a>
+      <a href="index.html">Logout</a>
+      <a href="Main.html"> Frontpage</a>
+    </div>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('attendanceChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Present', 'Absent'],
+        datasets: [{
+          label: 'Today\'s Attendance',
+          data: [324, 26],
+          backgroundColor: ['#4caf50', '#f44336']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

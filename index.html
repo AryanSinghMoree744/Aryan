@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIH Student Monitoring - Student Logs</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Student Logs Page -->
+  <div class="logs-container">
+    <h2>Student Logs</h2>
+
+    <!-- Search/Filter -->
+    <div class="filter-box">
+      <input type="text" id="searchInput" placeholder="Search by name or roll no..." />
+      <input type="date" id="dateFilter" />
+      <button onclick="filterLogs()">Filter</button>
+    </div>
+
+    <!-- Logs Table -->
+    <table id="logsTable">
+      <thead>
+        <tr>
+          <th>Roll No</th>
+          <th>Name</th>
+          <th>Entry Time</th>
+          <th>Exit Time</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Example Data -->
+        <tr>
+          <td>101</td>
+          <td>Aryan Singh</td>
+          <td>08:55 AM</td>
+          <td>03:45 PM</td>
+          <td>Present</td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>Rohit Verma</td>
+          <td>09:10 AM</td>
+          <td>--</td>
+          <td>Absent</td>
+        </tr>
+        <tr>
+          <td>103</td>
+          <td>Neha Sharma</td>
+          <td>09:00 AM</td>
+          <td>04:00 PM</td>
+          <td>Present</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Navigation -->
+    <div class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="manage.html">Manage Students</a>
+      <a href="reports.html">Reports</a>
+      <a href="index.html">Logout</a>
+    </div>
+  </div>
+  <button type="Button" > <a href="Main.html"> Go Back</a> </button> 
+  <script src="js/logs.js"></script>
+</body>
+</html>

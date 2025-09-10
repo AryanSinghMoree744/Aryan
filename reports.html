@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIH Student Monitoring - Reports</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Reports Page -->
+  <div class="reports-container">
+    <h2>Reports</h2>
+
+    <!-- Generate Report Section -->
+    <div class="report-box">
+      <button onclick="generateCSV()">Download CSV Report</button>
+      <button onclick="generatePDF()">Download PDF Report</button>
+    </div>
+
+    <!-- Sample Report Table -->
+    <h3>Attendance Report - Today</h3>
+    <table id="reportTable">
+      <thead>
+        <tr>
+          <th>Roll No</th>
+          <th>Name</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>101</td>
+          <td>Aryan Singh</td>
+          <td>Present</td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>Rohit Verma</td>
+          <td>Absent</td>
+        </tr>
+        <tr>
+          <td>103</td>
+          <td>Neha Sharma</td>
+          <td>Present</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Navigation -->
+    <div class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="logs.html">Student Logs</a>
+      <a href="manage.html">Manage Students</a>
+      <a href="index.html">Logout</a>
+    </div>
+  </div>
+
+  <script src="js/reports.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+/* ===================== styles.css ===================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+h2, h3 {
+  text-align: center;
+  margin: 20px 0;
+  color: #2c3e50;
+}
+
+/* Container */
+.login-container, .dashboard-container, .logs-container, .manage-container, .reports-container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  margin-top: 40px;
+}
+
+/* Forms */
+form input {
+  display: block;
+  width: 95%;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background: #2980b9;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #3498db;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Buttons */
+button {
+  padding: 6px 12px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+/* Navigation */
+.nav-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  padding: 10px 15px;
+  text-decoration: none;
+  background: #2ecc71;
+  color: white;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  background: #27ae60;
+}
+
+/* Filter box */
+.filter-box input, .filter-box select {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.filter-box button {
+  padding: 8px 12px;
+  background: #8e44ad;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-box button:hover {
+  background: #732d91;
+}
+
